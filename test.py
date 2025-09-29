@@ -359,16 +359,84 @@ set2 = {"a", "b", "c"}
 set1.update(set2)
 print(set1)
 
-# the .intersection method 
+# we will have a look at the .intersection() method
+# this method will return a new set but only with items that are present in both sets , remember returns a new set 
+set1 = {"apple", "banana", "cherry"}
+set2 = {"banana", "pear", "mango"}
+
+set3 = set1.intersection(set2)
+print(set3) # this will return the duplicate value of "banana"
 
 
+# we can alao use the .difference() method 
 
+# this method will return a new set that will contain only the items from the first set that are not present in the second set 
+set1 = {"apple", "mango", "banana", "orange", "pear"}
+set2 = {"pear","orange", "pineapple"}
+
+set3 = set1.difference(set2) 
+print(set3) # this will give us the values "mango", "apple" , "banana" as these are not in set2
+
+# now we move onto dictionaries 
+# they are used to store data values in key : value pairs 
+# it is a collection which is ordered, changeable and do not allow duplicates 
+
+# they are of the form 
+
+person : {
+    "Name" : "Ben",
+    "City" : "London", 
+    "Age" : 30 
+} 
+print(person)
+
+# if want to output a certain value within the dictionary we do 
+print(person[Age]) # this will output the integer value 30 
+
+# to find out how many items a dictionary has, we use the len () function 
+print(len(person)) # this will tell us that there are 3 items in the dictionary labelled "person"
+
+# the values in dictionaries can be of any data type 
+
+# dictionaries are defined as objects with data type "dict"
+
+# if want to access a item we can assign it to a variable x 
+
+x = person["Age"]
+# can also use the .get() function to carry out the same process 
+
+x = person.get("Age")
+
+# the .keys() function will return all the keys in the dictionary 
+
+x = person.keys() 
+
+# if we want to add a new item to the dictionary we do 
+
+x = person.keys()
+
+print(x)
+person["Pet"] = "Cat" 
+
+print(x)
+
+# just like with .keys() the .values() function will return all values in the dictionary
+
+x = person.values()
+
+# the .items() function will return each of the items in a dictionary as tuples in a list 
+
+x = person.items()
+
+# this will give us 
+[('Name', 'Ben'), ('City', 'London'), ('Age', '30')]
 
 
 
 
 
      
+
 
 
 
