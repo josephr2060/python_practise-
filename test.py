@@ -291,6 +291,88 @@ newlist = []
 
 # now we go into tuples 
 
+# to unpack tuples we assign a element to a variable like below 
+fruits = {"apple", "banana", "pear", "mango"}
+(purple, yellow, greeb, blue) = fruits 
+print(purple)
+print(green)
+print(yellow)
+
+# for loops, just like lists and sets 
+fruits = ("apple", "banana", "pear", "mango")
+for x in fruits:
+    print(x) # this will loop through all the values in the fruits tuple 
+
+# just like lists and sets we can also loop through all the indices, rememeber the range of the length of the tuple
+
+fruits = ("apple", "banana", "pear", "mango")
+for i in range(len(fruit)):
+    print(fruit[i])
+
+# we can add items to a set by using the .add() method, remember sets are written in {}
+
+fruits = {"apple", "banana", "pear", "mango"}
+fruits.add("orange") # this adds "orange" to the set
+
+print(fruits)
+
+# to add items from one set to another we use the .update() module, with lists we use the .extend module 
+
+# the object in the update()  method does not need to be a set as well, it can be a tuple, dictionary or list 
+
+# if we want to remove a item from a set just use .remove() module to do so 
+
+fruits = {"apple", "banana", "pear", "mango"}
+fruits.remove("apple")
+print(fruits)
+
+# can also use .discard() to remove a item from a list, will not raise a error if the item does not exist unlike .remove() which will 
+
+# if want to remove a random item can use .pop() module
+
+# the .clear() module empties the set 
+
+# del will delete the set completely
+
+# if want to join sets we use the .union module 
+
+# it will return a new set with all items from both sets
+
+set1 = {"a", "b", "c"}
+set2 = {"a", "b", "c"}
+
+set3 = set1.union(set2)
+print(set3) #  remember to always print off the remaining function to actually see the items printed off
+
+# if want to join multiple sets, let's say we have 4 sets 
+
+myset = set1.union(set2, set3, set4)
+print(myset)
+
+
+# the .union() allows to join a set with a tuple 
+
+# the difference between .union() and the .update() module is that the .update() moves all the items from one set into another, it does not return a new set 
+set1 = {"a", "b", "c"}
+set2 = {"a", "b", "c"}
+
+set1.update(set2)
+print(set1)
+
+# the .intersection method 
+
+
+
+
+
+
+
+
+     
+
+
+
+
 
 
 
