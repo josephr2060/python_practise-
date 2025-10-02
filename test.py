@@ -431,11 +431,16 @@ x = person.items()
 # this will give us 
 [('Name', 'Ben'), ('City', 'London'), ('Age', '30')]
 
+# now we move onto numpy 
+
+# it is a python library, short for numerical 
+
 
 
 
 
      
+
 
 
 
