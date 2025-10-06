@@ -433,13 +433,59 @@ x = person.items()
 
 # now we move onto numpy 
 
-# it is a python library, short for numerical 
+# it is a python library, short for "numerical python"
+
+ # Data Science: is a branch of computer science where we study how to store, use and analyze data for deriving information from it.
+
+# to use numpy we do 
+
+import numpy 
+
+# to create arrrays with numpy 
+
+# the array object is called ndarray , just the name for a array but in numpy 
+
+# to create array in numpy, we use the np.array() function 
+
+import numpy as np
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
+
+# so the above was a list 
+
+# we can do the same for a array in the form a tuple 
+
+import numpy as np 
+arr = np.array((1, 2, 3, 4, 5))
+print(arr)
+
+# there are different types of arrays which have different number of dimensions 
+
+# we will start with 1-D arrays, these are the basic arrays 
+
+import numpy as np
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
+
+# now we will move onto 2d arrays, these just contain two arrays within the brackets
+
+import numpy as np 
+arr = np.array([[1,2,3], [4, 5, 6]])
+print(arr)
+
+# now we will move onto 3d arrays, these contain two pairs of 2d arrays 
+
+import numpy as np
+arr = np.array([[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]])
+print(arr) 
+
 
 
 
 
 
      
+
 
 
 
